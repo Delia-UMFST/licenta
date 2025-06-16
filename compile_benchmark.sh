@@ -4,7 +4,6 @@ FILE="test-all.c"
 OUT="test-bench"
 PLUGINS="-fplugin=./plugin1.so -fplugin=./plugin2.so -fplugin=./plugin3.so -fplugin=./plugin4.so -fplugin=./plugin5.so"
 
-# Functie pentru rulare curata
 measure_time() {
     { /usr/bin/time -f "%e" "$@" > /dev/null; } 2>&1 | tail -n 1
 }
